@@ -1,0 +1,331 @@
+/* style.css */
+/*//////////////////////////// table start ///////////////////////*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #9fa1a0;
+  color: white;
+}
+#ecategorry{
+  background-color: rgb(119, 116, 116);
+  display: inline-block;
+  width: 65%;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+}
+.overflow{
+  overflow-x: scroll;
+  display: block;
+    width: 100%;
+}
+/*//////////////////////// table closee //////////////////////////*/
+/*///////// pagination start////// */
+.pagination {
+  display: inline-block;
+  float: right;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: grey;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/*///////// pagination close////// */
+
+/* ////////////////side navbar start ///////////////////// */
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #cac7c7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 33px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #131313;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #1e1919;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+span.icons {
+  padding: 5px;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/*//////////////////////////// sidenav bar close ////////////////////////// */
+
+/* /////////////////////////// import button start /////////////////////////// */
+#btn-import {
+  float: right;
+  padding: 11px;
+  margin: 7px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 4px 1px;
+  border-radius: 3px;
+}
+#btn-import a {
+  text-decoration: none;
+  color: #111;
+}
+/* /////////////////////////// import button close /////////////////////////// */
+
+/* /////////////////////////// hamburger button open /////////////////////////// */
+.hamburger {
+  width: 40px;
+  height: 37px;
+  background: #c5c2c2;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 6px;
+  margin: 10px;
+}
+
+#hamburger {
+  font-size: 25px;
+  cursor: pointer;
+}
+/* /////////////////////////// hamburger button close /////////////////////////// */
+
+/* /////////////////////////// display page start  /////////////////////////// */
+
+/* top-content */
+.top-side h1{
+  margin-top: 7px;
+}
+
+  .top-side {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid;
+    height: 10vh;
+}
+
+#btn-action {
+  position: relative;
+  top: 13px;
+  height: 45px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 2px darkgray;
+}
+
+/* /////////////////////////// fort data start  /////////////////////////// */
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  background: #fff;
+  padding: 0 28px;
+  border-radius: 10px;
+  box-shadow: none;
+  margin: auto;
+  box-shadow: 2px 4px 16px black;
+  margin-top: 5%;
+}
+.form-title {
+  font-size: 26px;
+  font-weight: 600px;
+  text-align: center;
+  padding-bottom: 6px;
+  color: #111;
+  /* text-shadow: 3px 1px 3px rgb(29, 29, 29); */
+
+  border-bottom: solid 1px rgb(35, 35, 35);
+}
+.main-user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+.user-input-box:nth-child(2n) {
+  justify-content: end;
+}
+.user-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.user-input-box label {
+  width: 95%;
+  /* color: #fff; */
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+.user-input-box input {
+  margin-right: 5px;
+  height: 40px;
+  width: 95%;
+  border-radius: 7px;
+  outline: none;
+  border: 1px solid grey;
+  padding: 0 10px;
+}
+.form-submit-btn {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.form-submit-btn button ,#cancel {
+ 
+  width: 30%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  color: #fff;
+  background-color: rgb(156, 153, 153);
+}
+#save{
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 600px) {
+
+  .user-input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .user-input-box:nth-child(2n) {
+    justify-content: space-between;
+  }
+  .main-user-info {
+    max-height: 280px;
+    overflow: auto;
+  }
+   
+} 
+@media(max-width:433px){
+  h1{
+    font-size: 6vw;
+  }
+
+  #btn-action{
+    padding: 5px;
+    width: auto;
+    height: 32px;
+    font-size: 10px;
+  }
+  .form-submit-btn button, #cancel{
+    font-size: 3vw;
+  }
+  .user-input-box input{
+    height: 33px;
+  }
+  .user-input-box label{
+    margin: 0;
+    font-size: 14px;
+  }
+}
+/* /////////////////////////// fort data close  /////////////////////////// */
+
+/* /////////////////////////// display page close  /////////////////////////// */
+
+/* popup start */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.popup-content {
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+}
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+/* popup close */
